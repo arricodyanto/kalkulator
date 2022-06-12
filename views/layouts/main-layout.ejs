@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        <%= title %>
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <%- body %>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    function tambah() {
+        var bilangan1 = parseFloat(document.calculator.bilangan1.value);
+        var bilangan2 = parseFloat(document.calculator.bilangan2.value);
+        var hasil = bilangan1 + bilangan2;
+        document.calculator.hasil.value = hasil;
+    }
+
+    function kurang() {
+        var bilangan1 = parseFloat(document.calculator.bilangan1.value);
+        var bilangan2 = parseFloat(document.calculator.bilangan2.value);
+        var hasil = bilangan1 - bilangan2;
+        document.calculator.hasil.value = hasil;
+    }
+
+    function kali() {
+        var bilangan1 = parseFloat(document.calculator.bilangan1.value);
+        var bilangan2 = parseFloat(document.calculator.bilangan2.value);
+        var hasil = bilangan1 * bilangan2;
+        document.calculator.hasil.value = hasil;
+    }
+
+    function bagi() {
+        var bilangan1 = parseFloat(document.calculator.bilangan1.value);
+        var bilangan2 = parseFloat(document.calculator.bilangan2.value);
+        var hasil = bilangan1 / bilangan2;
+        document.calculator.hasil.value = hasil;
+    }
+
+    function mod() {
+        var bilangan1 = parseFloat(document.calculator.bilangan1.value);
+        var bilangan2 = parseFloat(document.calculator.bilangan2.value);
+        var hasil = bilangan1 % bilangan2;
+        document.calculator.hasil.value = hasil;
+    }
+
+    function pangkat() {
+        var bilangan1 = parseFloat(document.calculator.bilangan1.value);
+        var bilangan2 = parseFloat(document.calculator.bilangan2.value);
+        var hasil = Math.pow(bilangan1, bilangan2);
+        document.calculator.hasil.value = hasil;
+    }
+</script>

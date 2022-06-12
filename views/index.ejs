@@ -1,0 +1,36 @@
+<div class="row justify-content-center mt-4">
+    <div class="col-4 border border-1 p-4 bg-warning rounded">
+        <h4 class="text-center mb-3">Program Kalkulator Sederhana</h4>
+        <form name="calculator">
+            <div class="form-floating mb-3">
+                <textarea class="form-control" name="history" id="history" style="height: 100px"></textarea>
+            </div>
+            <div class="row">
+                <div class="mb-3 col">
+                    <label for="bilangan1" class="form-label">Bilangan 1</label>
+                    <input type="text" name="bilangan1" class="form-control" id="bilangan1" placeholder="Masukkan nilai">
+
+                </div>
+                <div class="mb-4 col">
+                    <label for="bilangan2" class="form-label">Bilangan 2 </label>
+                    <input type="text" name="bilangan2" class="form-control" id="bilangan2" placeholder="Masukkan nilai">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="hasil" class="form-label">Hasil </label>
+                <input type="text" name="hasil" class="form-control" id="hasil" placeholder="Hasil Perhitungan">
+            </div>
+            <div class="mb-1 text-center">
+                <input class="btn btn-dark rounded" style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;" type="button" onclick="tambah()" value="  +  ">
+                <input class="btn btn-dark rounded" style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;" type="button" onclick="kurang()" value="  -  ">
+                <input class="btn btn-dark rounded" style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;" type="button" onclick="kali()" value="  x  ">
+                <input class="btn btn-dark rounded" style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;" type="button" onclick="bagi()" value="  /  ">
+                <input class="btn btn-dark rounded" style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;" type="button" onclick="mod()" value="  %  ">
+                <input class="btn btn-dark rounded" style="--bs-btn-padding-y: .6rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 0.8rem;" type="button" onclick="pangkat()" value="  ^  ">
+            </div>
+            <div class="d-grid col-7 mx-auto">
+                <button class=" btn btn-dark " type="button ">Simpan</button>
+            </div>
+        </form>
+    </div>
+</div>
